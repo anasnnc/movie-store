@@ -1,0 +1,12 @@
+<div class="container">
+<!--    <legend style="color:lightgrey;font-size:30px;padding:10px;">Update Field</legend>-->
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-primary btn-lg" type="submit">
+    </form>
+
+    <div class="alert alert-warning" role="alert">
+        The Fields will be Updated
+    </div>
+</div>
